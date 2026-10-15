@@ -777,6 +777,7 @@ message CastNode {
   datafusion_common.ArrowType arrow_type = 2;
   map<string, string> metadata = 3;
   optional bool nullable = 4;
+  optional bool is_implicit = 5;
 }
 
 message TryCastNode {
@@ -784,6 +785,7 @@ message TryCastNode {
   datafusion_common.ArrowType arrow_type = 2;
   map<string, string> metadata = 3;
   optional bool nullable = 4;
+  optional bool is_implicit = 5;
 }
 
 message SortExprNode {
